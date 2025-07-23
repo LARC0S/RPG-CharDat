@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/RVPersonajeFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentMainMenu.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_mainMenuFragment_to_personajeFragment"
+            app:destination="@id/personajeFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_RVArmaFragment"
+            app:destination="@id/RVArmaFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_RVPersonajeFragment"
+            app:destination="@id/RVPersonajeFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_RVArmaduraFragment"
+            app:destination="@id/RVArmaduraFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_RVEscudoFragment"
+            app:destination="@id/RVEscudoFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_RVObjetoFragment"
+            app:destination="@id/RVObjetoFragment" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/personajeFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentShowPersonaje.ShowPersonajeFragment"
+        android:label="fragment_personaje"
+        tools:layout="@layout/fragment_personaje">
+        <action
+            android:id="@+id/action_personajeFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/RVArmaFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentListArmas.RVArmaFragment"
+        android:label="fragment_armas"
+        tools:layout="@layout/fragment_armas">
+        <action
+            android:id="@+id/action_RVArmaFragment_to_armaFragment"
+            app:destination="@id/armaFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_RVArmaFragment_to_addArmaFragment"
+            app:destination="@id/addArmaFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/armaFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentShowArma.ShowArmaFragment"
+        android:label="fragment_arma"
+        tools:layout="@layout/fragment_arma">
+        <action
+            android:id="@+id/action_armaFragment_to_RVArmaFragment"
+            app:destination="@id/RVArmaFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <argument
+            android:name="idArma"
+            app:argType="integer" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPersonajeFragment1"
+        android:name="ies.quevedo.chardat.framework.fragmentsAddPersonaje.AddPersonajeFragmentText"
+        android:label="fragment_add_personaje"
+        tools:layout="@layout/fragment_add_personaje1">
+        <action
+            android:id="@+id/action_addPersonajeFragment1_to_addPersonajeFragment2"
+            app:destination="@id/addPersonajeFragment2"
+            app:enterAnim="@android:anim/fade_in" />
+        <argument
+            android:name="clase"
+            app:argType="string" />
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument
+            android:name="descripcion"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/RVPersonajeFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentListPersonajes.RVPersonajeFragment"
+        android:label="fragment_personajes_list"
+        tools:layout="@layout/fragment_personajes">
+        <action
+            android:id="@+id/action_RVPersonajeFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_RVPersonajeFragment_to_addPersonajeFragment1"
+            app:destination="@id/addPersonajeFragment1"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPersonajeFragment2"
+        android:name="ies.quevedo.chardat.framework.fragmentsAddPersonaje.AddPersonajeFragmentStats"
+        android:label="fragment_add_personaje2"
+        tools:layout="@layout/fragment_add_personaje2">
+        <action
+            android:id="@+id/action_addPersonajeFragment2_to_addPersonajeFragment3"
+            app:destination="@id/addPersonajeFragment3"
+            app:enterAnim="@android:anim/fade_in" />
+        <argument
+            android:name="clase"
+            app:argType="string" />
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument
+            android:name="descripcion"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPersonajeFragment3"
+        android:name="ies.quevedo.chardat.framework.fragmentsAddPersonaje.AddPersonajeFragmentValues"
+        android:label="fragment_add_personaje3"
+        tools:layout="@layout/fragment_add_personaje3">
+        <action
+            android:id="@+id/action_addPersonajeFragment3_to_RVPersonajeFragment"
+            app:destination="@id/RVPersonajeFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <argument
+            android:name="clase"
+            app:argType="string" />
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument
+            android:name="descripcion"
+            app:argType="string" />
+        <argument
+            android:name="agilidad"
+            app:argType="integer" />
+        <argument
+            android:name="constitucion"
+            app:argType="integer" />
+        <argument
+            android:name="destreza"
+            app:argType="integer" />
+        <argument
+            android:name="fuerza"
+            app:argType="integer" />
+        <argument
+            android:name="inteligencia"
+            app:argType="integer" />
+        <argument
+            android:name="percepcion"
+            app:argType="integer" />
+        <argument
+            android:name="poder"
+            app:argType="integer" />
+        <argument
+            android:name="voluntad"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/addArmaFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentAddArma.AddArmaFragment"
+        android:label="fragment_add_arma"
+        tools:layout="@layout/fragment_add_arma">
+        <action
+            android:id="@+id/action_addArmaFragment_to_RVArmaFragment"
+            app:destination="@id/RVArmaFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/RVArmaduraFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentListArmaduras.RVArmaduraFragment"
+        android:label="fragment_armaduras"
+        tools:layout="@layout/fragment_armaduras">
+        <action
+            android:id="@+id/action_RVArmaduraFragment_to_addArmaduraFragment"
+            app:destination="@id/addArmaduraFragment" />
+        <action
+            android:id="@+id/action_RVArmaduraFragment_to_armaduraFragment"
+            app:destination="@id/armaduraFragment" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/addArmaduraFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentAddArmadura.AddArmaduraFragment"
+        android:label="fragment_add_armadura"
+        tools:layout="@layout/fragment_add_armadura">
+        <action
+            android:id="@+id/action_addArmaduraFragment_to_RVArmaduraFragment"
+            app:destination="@id/RVArmaduraFragment" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/armaduraFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentShowArmadura.ShowArmaduraFragment"
+        android:label="fragment_armadura"
+        tools:layout="@layout/fragment_armadura">
+        <action
+            android:id="@+id/action_armaduraFragment_to_RVArmaduraFragment"
+            app:destination="@id/RVArmaduraFragment" />
+        <argument
+            android:name="idArmadura"
+            app:argType="integer" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/RVEscudoFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentListEscudos.RVEscudoFragment"
+        android:label="fragment_escudos"
+        tools:layout="@layout/fragment_escudos">
+        <action
+            android:id="@+id/action_RVEscudoFragment_to_addEscudoFragment"
+            app:destination="@id/addEscudoFragment" />
+        <action
+            android:id="@+id/action_RVEscudoFragment_to_escudoFragment"
+            app:destination="@id/escudoFragment" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEscudoFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentAddEscudo.AddEscudoFragment"
+        android:label="fragment_add_escudo"
+        tools:layout="@layout/fragment_add_escudo">
+        <action
+            android:id="@+id/action_addEscudoFragment_to_RVEscudoFragment"
+            app:destination="@id/RVEscudoFragment" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/escudoFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentShowEscudo.ShowEscudoFragment"
+        android:label="fragment_escudo"
+        tools:layout="@layout/fragment_escudo">
+        <action
+            android:id="@+id/action_escudoFragment_to_RVEscudoFragment"
+            app:destination="@id/RVEscudoFragment" />
+        <argument
+            android:name="idEscudo"
+            app:argType="integer" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/RVObjetoFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentListObjetos.RVObjetoFragment"
+        android:label="fragment_objetos"
+        tools:layout="@layout/fragment_objetos">
+        <action
+            android:id="@+id/action_RVObjetoFragment_to_addObjetoFragment"
+            app:destination="@id/addObjetoFragment" />
+        <action
+            android:id="@+id/action_RVObjetoFragment_to_objetoFragment"
+            app:destination="@id/objetoFragment" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/addObjetoFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentAddObjeto.AddObjetoFragment"
+        android:label="fragment_add_objeto"
+        tools:layout="@layout/fragment_add_objeto">
+        <action
+            android:id="@+id/action_addObjetoFragment_to_RVObjetoFragment"
+            app:destination="@id/RVObjetoFragment" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/objetoFragment"
+        android:name="ies.quevedo.chardat.framework.fragmentShowObjeto.ShowObjetoFragment"
+        android:label="fragment_objeto"
+        tools:layout="@layout/fragment_objeto">
+        <action
+            android:id="@+id/action_objetoFragment_to_RVObjetoFragment"
+            app:destination="@id/RVObjetoFragment" />
+        <argument
+            android:name="idObjeto"
+            app:argType="integer" />
+        <argument
+            android:name="idPersonaje"
+            app:argType="integer" />
+    </fragment>
+</navigation>

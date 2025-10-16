@@ -1,4 +1,4 @@
-# CharDat – Gestor de Personajes de Anima Beyond Fantasy
+# CharDat – Gestor de Personajes de Anima: Beyond Fantasy
 
 **CharDat** es una aplicación desarrollada en **Kotlin** para la gestión avanzada de personajes del juego de rol **Anima: Beyond Fantasy**.  
 Su objetivo es ofrecer una experiencia moderna, ágil y visualmente atractiva que simplifique la creación, edición y almacenamiento de fichas de personaje, manteniendo la fidelidad a las reglas oficiales del sistema.
@@ -7,27 +7,27 @@ Su objetivo es ofrecer una experiencia moderna, ágil y visualmente atractiva qu
 
 ## 🧭 Pantallas principales
 
-### 1. Introducción
+### Introducción
 <img src="./img/1.png" alt="Introducción" width="1000">
 
 ---
 
-### 2. Proceso de login/registro
+### Proceso de login/registro
 <img src="./img/2.png" alt="Proceso de login/registro" width="1000">
 
 ---
 
-### 3. Funcionalidades disponibles
+### Funcionalidades disponibles
 <img src="./img/3.png" alt="Funcionalidades disponibles" width="1000">
 
 ---
 
-### 4. Menú de personaje e inventario
+### Menú de personaje e inventario
 <img src="./img/4.png" alt="Menú de personaje e inventario" width="1000">
 
 ---
 
-### 5. Puntos destacados
+### Puntos destacados
 <img src="./img/5.png" alt="Puntos destacados" width="1000">
 
 ---

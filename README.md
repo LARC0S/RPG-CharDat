@@ -7,28 +7,28 @@ Su objetivo es ofrecer una experiencia moderna, ágil y visualmente atractiva qu
 
 ## 🧭 Pantallas principales
 
-### 1. Pantalla de Inicio
-<img src="./img/1.png" alt="Pantalla de inicio" width="1000">
+### 1. Introducción
+<img src="./img/1.png" alt="Introducción" width="1000">
 
 ---
 
-### 2. Ficha del Personaje
-<img src="./img/2.png" alt="Ficha del personaje" width="1000">
+### 2. Proceso de login/registro
+<img src="./img/2.png" alt="Proceso de login/registro" width="1000">
 
 ---
 
-### 3. Habilidades y Competencias
-<img src="./img/3.png" alt="Pantalla de habilidades" width="1000">
+### 3. Funcionalidades disponibles
+<img src="./img/3.png" alt="Funcionalidades disponibles" width="1000">
 
 ---
 
-### 4. Magia y Poderes
-<img src="./img/4.png" alt="Pantalla de magia" width="1000">
+### 4. Menú de personaje e inventario
+<img src="./img/4.png" alt="Menú de personaje e inventario" width="1000">
 
 ---
 
-### 5. Resumen y Exportación
-<img src="./img/5.png" alt="Pantalla de resumen" width="1000">
+### 5. Puntos destacados
+<img src="./img/5.png" alt="Puntos destacados" width="1000">
 
 ---
 

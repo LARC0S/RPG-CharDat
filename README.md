@@ -8,14 +8,14 @@ Su objetivo es ofrecer una experiencia moderna, ágil y visualmente atractiva qu
 ## 🧭 Pantallas principales
 
 ### 1. Pantalla de Inicio
-<img src="./assets/1.png" alt="Pantalla de inicio" width="800">
+<img src="./img/1.png" alt="Pantalla de inicio" width="800">
 
 La pantalla inicial permite acceder rápidamente a la creación o carga de personajes existentes. Su diseño en **Jetpack Compose** proporciona una navegación fluida y una interfaz reactiva.
 
 ---
 
 ### 2. Ficha del Personaje
-<img src="./assets/2.png" alt="Ficha del personaje" width="800">
+<img src="./img/2.png" alt="Ficha del personaje" width="800">
 
 Vista principal donde se gestionan las estadísticas base, características y puntos de desarrollo del personaje.  
 Los cálculos y validaciones se realizan automáticamente mediante controladores inyectados con **Hilt**, garantizando separación clara de responsabilidades.
@@ -23,7 +23,7 @@ Los cálculos y validaciones se realizan automáticamente mediante controladores
 ---
 
 ### 3. Habilidades y Competencias
-<img src="./assets/3.png" alt="Pantalla de habilidades" width="800">
+<img src="./img/3.png" alt="Pantalla de habilidades" width="800">
 
 Muestra las **habilidades secundarias** organizadas por categorías, actualizándose en tiempo real según los puntos distribuidos.  
 La capa de persistencia basada en **Room** mantiene los datos sincronizados localmente, asegurando consistencia incluso sin conexión.
@@ -31,7 +31,7 @@ La capa de persistencia basada en **Room** mantiene los datos sincronizados loca
 ---
 
 ### 4. Magia y Poderes
-<img src="./assets/4.png" alt="Pantalla de magia" width="800">
+<img src="./img/4.png" alt="Pantalla de magia" width="800">
 
 Sección dedicada a los caminos mágicos, conjuros y poderes sobrenaturales.  
 La sincronización con el servicio remoto se realiza a través de un **API REST** protegido con cifrado y autenticación de usuario.  
@@ -40,7 +40,7 @@ Los datos se almacenan en **MongoDB**, actuando como backend persistente y fuent
 ---
 
 ### 5. Resumen y Exportación
-<img src="./assets/5.png" alt="Pantalla de resumen" width="800">
+<img src="./img/5.png" alt="Pantalla de resumen" width="800">
 
 Permite revisar toda la ficha del personaje y exportarla o guardarla localmente.  
 Su estructura modular facilita la extensión a nuevos sistemas o juegos en el futuro.
